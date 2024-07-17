@@ -8,10 +8,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 #game-container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     padding: 20px;
@@ -23,8 +26,20 @@ h1 {
     text-align: center;
 }
 
+#story-container {
+    position: relative;
+}
+
 #story-text {
     margin-bottom: 20px;
+    min-height: 200px;
+}
+
+#character {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    max-height: 200px;
 }
 
 #choices {
