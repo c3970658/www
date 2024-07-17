@@ -65,4 +65,45 @@ const scenes = [
     {
         text: `隠し通路の先には、地下室が広がっていた。そこで古い資料や書物を発見し、失踪事件の真相に迫る手がかりを得た。`,
         choices: [
-            { text: '続ける', nextScene: 12
+            { text: '続ける', nextScene: 12 }
+        ]
+    },
+    {
+        text: `準備を整えた彼らは、隠し通路に入り、地下室に到達した。そこで重要な手がかりを見つけ、次のステップに進む決意をした。`,
+        choices: [
+            { text: '続ける', nextScene: 12 }
+        ]
+    },
+    {
+        text: `次のシーンがここに続きます。`,
+        choices: [
+            { text: '次へ', nextScene: 12 }
+        ]
+    }
+];
+
+let currentScene = 0;
+
+function nextScene() {
+    const scene = scenes[currentScene];
+    document.getElementById('story-text').innerHTML = scene.text;
+    const choicesDiv = document.getElementById('choices');
+    choicesDiv.innerHTML = '';
+
+    scene.choices.forEach(choice => {
+        const button = document.createElement('button');
+        button.className = 'choice-button';
+        button.innerHTML = choice.text;
+        button.onclick = () => {
+            currentScene = choice.nextScene;
+            nextScene();
+        };
+        choicesDiv.appendChild(button);
+    });
+
+    document.getElementById('next-button').style.display = scene.choices.length === 0 ? 'block' : 'none';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    nextScene();
+});
