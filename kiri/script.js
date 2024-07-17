@@ -1,3 +1,6 @@
+console.log("JavaScript is running");
+
+// シーンデータ
 const scenes = [
     {
         text: `田中優斗と佐藤和樹は都会の喧騒から逃れるため、山間の温泉旅館「霧の宿」にやってきた。夜が更けるにつれ、不穏な出来事が起こり始める。<br><br>到着した彼らは、旅館の女将に迎えられた。`,
@@ -85,6 +88,7 @@ const scenes = [
 let currentScene = 0;
 
 function nextScene() {
+    console.log("Loading scene", currentScene);
     const scene = scenes[currentScene];
     document.getElementById('story-text').innerHTML = scene.text;
     const choicesDiv = document.getElementById('choices');
