@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Day3 天気アプリ（OpenWeatherMap）</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>天気を調べる</h1>
+    <p class="note">都市名をローマ字または英語で入力（例：Tokyo, Osaka, Gifu, Nagoya）</p>
+
+    <div class="controls">
+      <input id="cityInput" type="text" placeholder="都市名を入力" />
+      <button id="searchBtn">検索</button>
+      <button id="geoBtn" title="現在地で検索">現在地</button>
+    </div>
+
+    <div id="status" class="status">準備OK</div>
+
+    <section id="result" class="card">
+      <p class="muted">ここに検索結果が表示されます。</p>
+    </section>
+
+    <details class="help">
+      <summary>うまくいかないとき</summary>
+      <ul>
+        <li>APIキーが正しいか（半角・余計な空白なし）</li>
+        <li>都市名のスペル（例：Tokyo, Gifu）</li>
+        <li>数十秒待ってリロード（Pages反映が遅いことあり）</li>
+        <li>Console（F12→Console）でエラーメッセージ確認</li>
+      </ul>
+    </details>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+:root {
+  --bg: #f6f9fe;
+  --text: #222;
+  --muted: #666;
+  --card: #fff;
+  --primary: #0a66c2;
+  --border: #e5eaf2;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+  text-align: center;
+}
+
+h1 { margin: 0 0 8px; }
+.note { margin: 0 0 24px; color: var(--muted); }
+
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.controls input {
+  width: 240px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 16px;
+}
+.controls button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  cursor: pointer;
+}
+.controls button#searchBtn {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.controls button:hover { filter: brightness(0.95); }
+
+.status {
+  min-height: 24px;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.card {
+  margin: 16px auto 0;
+  padding: 20px;
+  max-width: 560px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+}
+.card h2 { margin: 0 0 12px; }
+.row { display: flex; gap: 16px; align-items: center; }
+.row img { width: 64px; height: 64px; image-rendering: -webkit-optimize-contrast; }
+.meta { display: grid; gap: 6px; }
+
+.kv { font-size: 18px; }
+.kv b { font-size: 28px; }
+
+.muted { color: var(--muted); }
+.help { margin-top: 16px; text-align: left; }
