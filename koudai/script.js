@@ -1,5 +1,5 @@
 // ====== 各自のAPIキーを入れてください ======
-const API_KEY = "ここに自分のOpenWeatherMap APIキー";
+const API_KEY = "f75337bd932dfeeb15988944e761ba24";
 
 const cityInput = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
