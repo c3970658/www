@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cafe Bloom｜心地よいカフェ時間</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="logo" href="#top" aria-label="Cafe Bloom home">
+      <span class="logo-mark">B</span>
+      <span>Cafe Bloom</span>
+    </a>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a href="#concept">Concept</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="カフェのメインビジュアル">
+      <img class="hero-img" src="assets/img/hero_generic_cafe.jpg" alt="明るいカフェ店内の写真" />
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Cafe & Relax</p>
+        <h1>何気ない午後を、<br>少しだけ特別に。</h1>
+        <p class="lead">やわらかな光、かわいいドリンク、ゆっくり過ごせる空間。Cafe Bloomで、自分らしいカフェ時間を。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#menu">メニューを見る</a>
+          <a class="btn ghost" href="#gallery">写真を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="concept" class="section intro">
+      <span class="section-label">Concept</span>
+      <h2>ゆっくり過ごせる、かわいいカフェ。</h2>
+      <p>Bloomは、友達とのおしゃべりにも、ひとり時間にも使える小さなカフェです。店内には、思わず写真を撮りたくなる席や、季節に合わせたドリンクをご用意しています。</p>
+      <div class="feature-row">
+        <div><strong>Relax</strong><span>落ち着いた空間</span></div>
+        <div><strong>Photo</strong><span>写真を撮りたくなる雰囲気</span></div>
+        <div><strong>Drink</strong><span>季節のドリンク</span></div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <span class="section-label">Menu</span>
+      <h2>気分に合わせて選べるメニュー</h2>
+      <p class="section-lead">ドリンクやスイーツを、その日の気分に合わせて楽しめます。</p>
+      <div class="cards">
+        <article class="menu-card">
+          <img src="assets/img/generic_drinks.jpg" alt="カフェのドリンク写真" />
+          <div class="card-body">
+            <h3>Bloom Drink</h3>
+            <p>すっきり飲みやすい、カフェの定番ドリンク。</p>
+            <button class="small-btn" data-toast="ドリンクメニューを準備中です。">More</button>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="assets/img/color_drinks_logo.jpg" alt="カラフルなドリンク写真" />
+          <div class="card-body">
+            <h3>Color Soda</h3>
+            <p>明るい色で、写真にも残したくなるドリンク。</p>
+            <button class="small-btn" data-toast="季節限定メニューを準備中です。">More</button>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="assets/img/gallery_space.jpg" alt="カフェの店内写真" />
+          <div class="card-body">
+            <h3>Sweet Plate</h3>
+            <p>ゆっくりした時間にぴったりのスイーツ。</p>
+            <button class="small-btn" data-toast="スイーツメニューを準備中です。">More</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <span class="section-label">Gallery</span>
+      <h2>Photo Gallery</h2>
+      <p class="section-lead">店内の雰囲気やドリンクのイメージを写真でご紹介します。</p>
+      <div class="gallery-grid" aria-label="カフェイメージ写真">
+        <figure>
+          <img src="assets/img/hero_generic_cafe.jpg" alt="カフェ店内の写真" />
+          <figcaption>Interior</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/generic_drinks.jpg" alt="ドリンクの写真" />
+          <figcaption>Drink</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/color_drinks_logo.jpg" alt="カラフルなドリンクの写真" />
+          <figcaption>Color</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/gallery_space.jpg" alt="カフェ空間の写真" />
+          <figcaption>Space</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section news-section">
+      <span class="section-label">News</span>
+      <h2>季節のおすすめが登場しました。</h2>
+      <p>新しいドリンクやスイーツを少しずつ追加しています。お近くに来たときは、ぜひお立ち寄りください。</p>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <span class="section-label">Contact</span>
+      <h2>ご来店・お問い合わせ</h2>
+      <div class="contact-box">
+        <div>
+          <h3>Cafe Bloom</h3>
+          <p>カフェのご利用やメニューについては、フォームよりお問い合わせください。</p>
+        </div>
+        <form class="contact-form" onsubmit="return false;">
+          <input type="text" aria-label="お名前" placeholder="お名前" />
+          <input type="email" aria-label="メールアドレス" placeholder="メールアドレス" />
+          <button class="btn primary" id="contactBtn">送信する</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Cafe Bloom</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

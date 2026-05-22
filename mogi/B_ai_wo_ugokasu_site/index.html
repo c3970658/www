@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>駅前カフェ Bloom｜推し色ソーダ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="logo" href="#top" aria-label="駅前カフェ Bloom home">
+      <span class="logo-mark">B</span>
+      <span>駅前カフェ Bloom</span>
+    </a>
+    <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a href="#soda">推し色ソーダ</a>
+      <a href="#menu">メニュー</a>
+      <a href="#coupon">クーポン</a>
+      <a href="#access">アクセス</a>
+      <a class="nav-cta" href="#coupon">クーポンを見る</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="推し色ソーダのメインビジュアル">
+      <div class="hero-copy">
+        <p class="eyebrow">After School Cafe</p>
+        <h1>好きな色で、<br>放課後をちょっと楽しく。</h1>
+        <p class="lead">駅前カフェ Bloom の新商品「推し色ソーダ」は、好きな色を選べる写真映えドリンク。友達と色違いで楽しめます。</p>
+        <div class="price-line" aria-label="商品価格">
+          <span class="product-name">推し色ソーダ</span>
+          <span class="price">500円</span>
+          <span class="badge">放課後限定</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="#coupon">50円OFFクーポンを見る</a>
+          <a class="btn secondary" href="#access">場所・営業時間を見る</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-stack">
+          <img class="main-photo" src="assets/img/hero_oshiiro_soda.jpg" alt="青いソーダドリンクの写真" />
+          <div class="animated-drink-card" aria-hidden="true">
+            <div class="mini-soda-glass auto-color">
+              <i class="straw"></i>
+              <i class="foam"></i>
+              <i class="ice ice-1"></i>
+              <i class="ice ice-2"></i>
+              <i class="bubble b1"></i>
+              <i class="bubble b2"></i>
+              <i class="bubble b3"></i>
+              <i class="bubble b4"></i>
+              <i class="bubble b5"></i>
+            </div>
+            <div>
+              <span>Today’s Soda</span>
+              <strong>推し色ソーダ</strong>
+              <small>全5色から選べます</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="soda" class="section soda-section">
+      <div class="section-head">
+        <span class="section-label">Oshiiro Soda</span>
+        <h2>友達と色違いで選べる、全5色。</h2>
+        <p>ブルー・ピンク・レモン・メロン・パープルから選べます。スマホで撮って、放課後の思い出にも。</p>
+      </div>
+
+      <div class="product-layout">
+        <figure class="product-photo">
+          <img src="assets/img/blue_soda_card.jpg" alt="推し色ソーダの写真" />
+        </figure>
+
+        <div class="color-demo">
+          <p class="eyebrow dark">Choose Your Color</p>
+          <h3 id="colorName">ブルーソーダ</h3>
+          <p id="colorDescription">さわやかな青。友達と並べて撮りたくなる人気カラー。</p>
+
+          <div class="soda-stage">
+            <div class="soda-glass blue" id="sodaGlass" aria-hidden="true">
+              <i class="straw"></i>
+              <i class="foam"></i>
+              <i class="ice ice-1"></i>
+              <i class="ice ice-2"></i>
+              <i class="bubble b1"></i>
+              <i class="bubble b2"></i>
+              <i class="bubble b3"></i>
+              <i class="bubble b4"></i>
+              <i class="bubble b5"></i>
+              <i class="bubble b6"></i>
+              <i class="sparkle s1"></i>
+              <i class="sparkle s2"></i>
+            </div>
+          </div>
+
+          <div class="color-picker" aria-label="色を選ぶ">
+            <button class="color-dot active" data-color="blue" data-name="ブルーソーダ" data-desc="さわやかな青。友達と並べて撮りたくなる人気カラー。" aria-label="ブルーソーダ"></button>
+            <button class="color-dot" data-color="pink" data-name="ピンクソーダ" data-desc="明るいピンク。写真にかわいさを足したい人におすすめ。" aria-label="ピンクソーダ"></button>
+            <button class="color-dot" data-color="yellow" data-name="レモンソーダ" data-desc="元気な黄色。放課後のおやつ時間にぴったり。" aria-label="レモンソーダ"></button>
+            <button class="color-dot" data-color="green" data-name="メロンソーダ" data-desc="定番の緑。はじめての人にも選びやすいカラー。" aria-label="メロンソーダ"></button>
+            <button class="color-dot" data-color="purple" data-name="パープルソーダ" data-desc="少し大人っぽい紫。推しカラーで選びたい人に。" aria-label="パープルソーダ"></button>
+          </div>
+
+          <div class="product-points">
+            <div><strong>500円</strong><span>税込価格</span></div>
+            <div><strong>15:30〜</strong><span>放課後販売</span></div>
+            <div><strong>5色</strong><span>色を選べる</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coupon" class="section coupon-section">
+      <div class="coupon-card">
+        <div>
+          <span class="section-label white">Coupon</span>
+          <h2>放課後限定：50円OFFクーポン</h2>
+          <p>この画面をレジで見せるだけ。推し色ソーダを500円から450円で楽しめます。</p>
+          <div class="coupon-meta">
+            <span>対象：推し色ソーダ</span>
+            <span>利用時間：15:30〜18:00</span>
+            <span>1人1回まで</span>
+          </div>
+        </div>
+        <div class="coupon-box" aria-label="クーポン">
+          <p>Coupon Code</p>
+          <strong id="couponCode">BLOOM50</strong>
+          <button class="btn dark" id="copyCoupon">コードをコピー</button>
+          <button class="btn light" id="showCoupon">レジで見せる</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-head">
+        <span class="section-label">Menu</span>
+        <h2>放課後にちょうどいいメニュー</h2>
+        <p>ドリンクだけでも、友達とシェアするセットでも。価格が見えるから、来店前に選びやすくなっています。</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-item highlight">
+          <img src="assets/img/blue_soda_card.jpg" alt="推し色ソーダの写真" />
+          <div>
+            <span class="menu-tag">おすすめ</span>
+            <h3>推し色ソーダ</h3>
+            <p>全5色。友達と色違いで楽しめます。</p>
+            <strong>500円</strong>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="assets/img/menu_drinks.jpg" alt="カフェドリンクの写真" />
+          <div>
+            <h3>フルーツティー</h3>
+            <p>果実入りのさっぱりドリンク。</p>
+            <strong>480円</strong>
+          </div>
+        </article>
+        <article class="menu-item">
+          <img src="assets/img/cafe_interior.jpg" alt="カフェ店内の写真" />
+          <div>
+            <h3>放課後セット</h3>
+            <p>ドリンク＋ミニスイーツ。</p>
+            <strong>780円</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="access" class="section access-section">
+      <div class="access-card">
+        <div class="access-copy">
+          <span class="section-label">Access</span>
+          <h2>駅から徒歩3分。放課後に寄り道しやすい場所。</h2>
+          <ul class="info-list">
+            <li><strong>住所：</strong>駅前通り1-2-3</li>
+            <li><strong>営業時間：</strong>平日 14:00〜19:00 / 土日 11:00〜18:00</li>
+            <li><strong>おすすめ時間：</strong>放課後 15:30〜18:00</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn primary" href="#coupon">クーポンを見てから行く</a>
+          </div>
+        </div>
+        <div class="access-visual">
+          <img src="assets/img/access_cafe.jpg" alt="カフェ店内の写真" />
+          <div class="map-card" aria-label="簡易地図">
+            <span>駅</span>
+            <i></i>
+            <strong>Bloom</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="couponModal" aria-hidden="true" role="dialog" aria-label="レジで見せるクーポン">
+    <div class="modal-backdrop" data-close="modal"></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close="modal" aria-label="閉じる">×</button>
+      <p class="eyebrow dark">レジで見せてください</p>
+      <h2>推し色ソーダ<br>50円OFF</h2>
+      <p class="modal-code">BLOOM50</p>
+      <p>利用時間：15:30〜18:00</p>
+      <button class="btn primary" data-close="modal">閉じる</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <p>© 駅前カフェ Bloom</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
