@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="高校生向けに岐阜協立大学の授業・キャンパス・学生生活を体験できるインタラクティブサイト。経営情報学科の経営・会計・情報を融合した学びを紹介します。">
+  <meta name="theme-color" content="#0b3763">
+  <link rel="icon" href="assets/images/gku-logo.png" type="image/png">
+  <title>GKU CAMPUS EXPERIENCE｜岐阜協立大学 経営情報学科</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scrollProgressBar"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="岐阜協立大学 キャンパス体験 トップへ">
+        <img src="assets/images/gku-logo.png" alt="岐阜協立大学 GIFU KYORITSU UNIVERSITY">
+        <span class="brand-project">CAMPUS EXPERIENCE</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="globalNav">
+        <span class="menu-button-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="menu-button-label">MENU</span>
+      </button>
+
+      <nav class="global-nav" id="globalNav" aria-label="メインナビゲーション">
+        <a href="#experience">3つの体験</a>
+        <a href="#management-info">経営情報学科</a>
+        <a href="#projects">プロジェクト</a>
+        <a href="#fit-check">適性診断</a>
+        <a class="nav-cta" href="https://www.gku.ac.jp/event/open_campus/index.html" target="_blank" rel="noopener noreferrer">
+          オープンキャンパス
+          <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-deco hero-deco-one" aria-hidden="true"></div>
+      <div class="hero-deco hero-deco-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span>GKU</span> HIGH SCHOOL STUDENTS</p>
+          <h1 id="heroTitle">
+            大学の学びを、<br>
+            <em>画面の中から体験する。</em>
+          </h1>
+          <p class="hero-lead">
+            授業、キャンパス、学生生活を触って確かめる3分間。<br>
+            経営情報学科の「考える・つくる・伝える」を先取りしよう。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experience">
+              キャンパス体験を始める
+              <span class="button-icon" aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-secondary" href="#management-info">
+              経営情報学科を見る
+            </a>
+          </div>
+          <ul class="hero-facts" aria-label="このサイトの特徴">
+            <li><strong>3</strong><span>つの体験</span></li>
+            <li><strong>経営×会計×情報</strong><span>をひとつに</span></li>
+            <li><strong>HTML / CSS / JS</strong><span>だけで動作</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="経営情報学科の授業風景">
+          <div class="browser-card">
+            <div class="browser-toolbar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <div class="browser-address">gku-campus-experience.jp</div>
+            </div>
+            <figure class="hero-photo">
+              <img src="assets/images/hero-ai-web.jpg" alt="パソコン教室でAI時代のWebディレクター体験に取り組む高校生と教員">
+            </figure>
+            <div class="hero-photo-caption">
+              <span class="live-dot" aria-hidden="true"></span>
+              AI時代のWebディレクター体験
+            </div>
+          </div>
+
+          <div class="floating-chip chip-management" aria-hidden="true">
+            <span>01</span>経営
+          </div>
+          <div class="floating-chip chip-accounting" aria-hidden="true">
+            <span>02</span>会計
+          </div>
+          <div class="floating-chip chip-information" aria-hidden="true">
+            <span>03</span>情報
+          </div>
+
+          <div class="hero-note" aria-hidden="true">
+            <span>TRY IT</span>
+            企画で、AIの答えは変わる。
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#experience" aria-label="3つの体験へスクロール">
+        <span>SCROLL</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="experience section" id="experience" aria-labelledby="experienceTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-number">01 / EXPERIENCE</p>
+          <div>
+            <h2 id="experienceTitle">高校生のための<br>3つのキャンパス体験</h2>
+            <p>気になるカードを選ぶと、体験内容が切り替わります。</p>
+          </div>
+        </div>
+
+        <div class="experience-tabs reveal" role="tablist" aria-label="キャンパス体験を選択">
+          <button class="experience-tab is-active" id="tab-lesson" type="button" role="tab" aria-selected="true" aria-controls="panel-lesson" data-experience="lesson">
+            <span class="tab-index">01</span>
+            <span class="tab-copy">
+              <strong>授業体験</strong>
+              <small>大学の授業で何を学ぶか、高校の授業と何が違うかを紹介。</small>
+            </span>
+            <span class="tab-arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <button class="experience-tab" id="tab-campus" type="button" role="tab" aria-selected="false" aria-controls="panel-campus" data-experience="campus" tabindex="-1">
+            <span class="tab-index">02</span>
+            <span class="tab-copy">
+              <strong>キャンパス見学</strong>
+              <small>情報センターや学びラウンジを、マップからのぞいてみよう。</small>
+            </span>
+            <span class="tab-arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <button class="experience-tab" id="tab-life" type="button" role="tab" aria-selected="false" aria-controls="panel-life" data-experience="life" tabindex="-1">
+            <span class="tab-index">03</span>
+            <span class="tab-copy">
+              <strong>学生生活</strong>
+              <small>昼休み、学食、学習スペースなど、大学生活の雰囲気を紹介。</small>
+            </span>
+            <span class="tab-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <div class="experience-panels reveal">
+          <section class="experience-panel is-active" id="panel-lesson" role="tabpanel" aria-labelledby="tab-lesson" data-panel="lesson">
+            <div class="panel-intro">
+              <div>
+                <p class="panel-kicker">LESSON EXPERIENCE</p>
+                <h3>正解を覚えるだけでなく、<br>「誰のために、何をつくるか」を考える。</h3>
+              </div>
+              <div class="school-vs-university" aria-label="高校と大学の授業の違い">
+                <div>
+                  <span>HIGH SCHOOL</span>
+                  <strong>答えを理解する</strong>
+                </div>
+                <i aria-hidden="true">→</i>
+                <div>
+                  <span>UNIVERSITY</span>
+                  <strong>問いをつくり、試す</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="lesson-lab">
+              <div class="lab-controls">
+                <div class="lab-title">
+                  <span class="lab-badge">MINI CLASS</span>
+                  <h4>AI Webディレクター体験</h4>
+                  <p>3つの条件を選び、企画によってWebサイトの見え方がどう変わるか確かめよう。</p>
+                </div>
+
+                <fieldset class="choice-group" data-choice-group="audience">
+                  <legend><span>1</span> 誰に届ける？</legend>
+                  <div class="choice-buttons">
+                    <button type="button" class="choice-button is-selected" data-value="高校生">高校生</button>
+                    <button type="button" class="choice-button" data-value="地域の人">地域の人</button>
+                    <button type="button" class="choice-button" data-value="新入生">新入生</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="choice-group" data-choice-group="goal">
+                  <legend><span>2</span> 何をしてほしい？</legend>
+                  <div class="choice-buttons">
+                    <button type="button" class="choice-button is-selected" data-value="イベントに参加してほしい">イベント参加</button>
+                    <button type="button" class="choice-button" data-value="商品の魅力を知ってほしい">商品を知る</button>
+                    <button type="button" class="choice-button" data-value="身近な課題を解決したい">課題解決</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="choice-group" data-choice-group="tone">
+                  <legend><span>3</span> どんな印象にする？</legend>
+                  <div class="choice-buttons">
+                    <button type="button" class="choice-button is-selected" data-value="ワクワク" data-theme="energy">ワクワク</button>
+                    <button type="button" class="choice-button" data-value="信頼感" data-theme="trust">信頼感</button>
+                    <button type="button" class="choice-button" data-value="シンプル" data-theme="simple">シンプル</button>
+                  </div>
+                </fieldset>
+
+                <button class="generate-button" id="generateConcept" type="button">
+                  <span>企画をWebサイトにする</span>
+                  <i aria-hidden="true">→</i>
+                </button>
+              </div>
+
+              <div class="lab-preview-wrap">
+                <div class="preview-label"><span>LIVE PREVIEW</span><i aria-hidden="true"></i></div>
+                <div class="website-preview theme-energy" id="websitePreview">
+                  <div class="preview-nav">
+                    <span class="preview-logo">IDEA LAB</span>
+                    <span>ABOUT</span>
+                    <span>JOIN</span>
+                  </div>
+                  <div class="preview-main">
+                    <p class="preview-eyebrow" id="previewEyebrow">FOR 高校生</p>
+                    <h5 id="previewTitle">今日のアイデアが、<br>明日のキッカケになる。</h5>
+                    <p id="previewDescription">イベントに参加してほしい人へ。ワクワクする体験を、分かりやすく届けます。</p>
+                    <button type="button" tabindex="-1" aria-hidden="true">体験してみる</button>
+                  </div>
+                  <div class="preview-shape shape-one" aria-hidden="true"></div>
+                  <div class="preview-shape shape-two" aria-hidden="true"></div>
+                </div>
+
+                <div class="concept-feedback" id="conceptFeedback" aria-live="polite">
+                  <div class="feedback-score">
+                    <span>企画スコア</span>
+                    <strong id="conceptScore">82</strong>
+                    <small>/ 100</small>
+                  </div>
+                  <div class="feedback-copy">
+                    <strong id="feedbackTitle">ターゲットと目的が見える企画です。</strong>
+                    <p id="feedbackText">経営情報学科では、見た目をつくるだけでなく、相手・目的・伝え方を設計する力を学びます。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="experience-panel" id="panel-campus" role="tabpanel" aria-labelledby="tab-campus" data-panel="campus" hidden>
+            <div class="panel-intro">
+              <div>
+                <p class="panel-kicker">CAMPUS TOUR</p>
+                <h3>気になる施設をタップして、<br>学びの場所を歩いてみよう。</h3>
+              </div>
+              <p class="panel-note">北方キャンパスの代表的なスポットをピックアップしています。</p>
+            </div>
+
+            <div class="campus-tour">
+              <div class="map-card">
+                <div class="map-topbar">
+                  <span>NORTH CAMPUS MAP</span>
+                  <small>HOTSPOTを選択</small>
+                </div>
+                <div class="map-image-wrap">
+                  <img src="assets/images/campus-map.png" alt="岐阜協立大学 北方キャンパスのマップ">
+                  <button class="map-hotspot is-active" type="button" style="--x: 29%; --y: 19%;" data-spot="information" aria-label="情報センターを見る">
+                    <span>9</span><i>情報センター</i>
+                  </button>
+                  <button class="map-hotspot" type="button" style="--x: 32%; --y: 55%;" data-spot="plaza" aria-label="student plazaを見る">
+                    <span>3</span><i>student plaza</i>
+                  </button>
+                  <button class="map-hotspot" type="button" style="--x: 44%; --y: 67%;" data-spot="cafeteria" aria-label="食堂 Cafe Rest 50を見る">
+                    <span>14</span><i>学食</i>
+                  </button>
+                  <button class="map-hotspot" type="button" style="--x: 20.5%; --y: 43%;" data-spot="library" aria-label="図書館を見る">
+                    <span>11</span><i>図書館</i>
+                  </button>
+                </div>
+              </div>
+
+              <article class="spot-detail" id="spotDetail" aria-live="polite">
+                <div class="spot-image">
+                  <img id="spotImage" src="assets/images/class-web.png" alt="情報センターのコンピュータ実習室">
+                  <span id="spotNumber">09</span>
+                </div>
+                <div class="spot-body">
+                  <p class="spot-type" id="spotType">LEARNING SPACE</p>
+                  <h4 id="spotTitle">情報センター（9号館）</h4>
+                  <p id="spotDescription">Webデザインや動画編集に取り組める実習環境。高性能PCやクリエイティブツールを使い、アイデアを形にします。</p>
+                  <ul id="spotTags">
+                    <li>Web制作</li>
+                    <li>動画編集</li>
+                    <li>グループ学習</li>
+                  </ul>
+                  <a id="spotLink" href="https://www.gku.ac.jp/about/campusmap/information_center.html" target="_blank" rel="noopener noreferrer">
+                    公式サイトで施設を見る <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="experience-panel" id="panel-life" role="tabpanel" aria-labelledby="tab-life" data-panel="life" hidden>
+            <div class="panel-intro">
+              <div>
+                <p class="panel-kicker">STUDENT LIFE</p>
+                <h3>授業だけではない。<br>仲間と過ごす時間も、大学の学び。</h3>
+              </div>
+              <p class="panel-note">経営情報学科の「ある1日」をイメージしたタイムラインです。</p>
+            </div>
+
+            <div class="day-experience">
+              <div class="day-timeline" role="tablist" aria-label="学生生活の時間帯を選択">
+                <button class="day-button is-active" id="day-tab-1" type="button" role="tab" aria-selected="true" aria-controls="dayScene" data-day="morning">
+                  <time>09:10</time>
+                  <span><strong>1限</strong> Web制作</span>
+                </button>
+                <button class="day-button" id="day-tab-2" type="button" role="tab" aria-selected="false" aria-controls="dayScene" data-day="lunch" tabindex="-1">
+                  <time>12:20</time>
+                  <span><strong>昼休み</strong> 学食へ</span>
+                </button>
+                <button class="day-button" id="day-tab-3" type="button" role="tab" aria-selected="false" aria-controls="dayScene" data-day="afternoon" tabindex="-1">
+                  <time>13:00</time>
+                  <span><strong>3限</strong> ゼミ活動</span>
+                </button>
+                <button class="day-button" id="day-tab-4" type="button" role="tab" aria-selected="false" aria-controls="dayScene" data-day="evening" tabindex="-1">
+                  <time>17:50</time>
+                  <span><strong>放課後</strong> 復習・相談</span>
+                </button>
+              </div>
+
+              <article class="day-scene" id="dayScene" role="tabpanel" aria-labelledby="day-tab-1" aria-live="polite">
+                <figure>
+                  <img id="dayImage" src="assets/images/class-web.png" alt="コンピュータ教室でWeb制作に取り組む学生">
+                  <figcaption id="dayCaption">09:10 / FIRST PERIOD</figcaption>
+                </figure>
+                <div class="day-copy">
+                  <p class="day-label" id="dayLabel">CREATE</p>
+                  <h4 id="dayTitle">HTML・CSS・JavaScriptで、<br>画面のアイデアを形にする。</h4>
+                  <p id="dayDescription">Web制作では、デザインだけでなく「誰に、何を、どう伝えるか」まで考えます。つくって、動かして、改善する授業です。</p>
+                  <div class="day-tags" id="dayTags">
+                    <span># Web制作</span>
+                    <span># 情報デザイン</span>
+                    <span># 実習</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="management-info section" id="management-info" aria-labelledby="managementTitle">
+      <div class="management-banner reveal" aria-hidden="true">
+        <img src="assets/images/management-info-collage.jpg" alt="">
+        <div class="banner-marquee">
+          <span>MANAGEMENT × ACCOUNTING × INFORMATION</span>
+          <span>MANAGEMENT × ACCOUNTING × INFORMATION</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-heading section-heading-light reveal">
+          <p class="section-number">02 / DEPARTMENT</p>
+          <div>
+            <h2 id="managementTitle">経営情報学科は、<br>アイデアを「価値」に変える学科。</h2>
+            <p>経営・会計・情報の3分野を行き来しながら、社会で使える提案力と実践力を育てます。</p>
+          </div>
+        </div>
+
+        <div class="three-fields reveal">
+          <div class="field-selector" role="tablist" aria-label="経営情報学科の3分野">
+            <button class="field-button is-active" id="field-tab-management" type="button" role="tab" aria-selected="true" aria-controls="fieldDetail" data-field="management">
+              <span>01</span>
+              <strong>経営</strong>
+              <small>MANAGEMENT</small>
+            </button>
+            <button class="field-button" id="field-tab-accounting" type="button" role="tab" aria-selected="false" aria-controls="fieldDetail" data-field="accounting" tabindex="-1">
+              <span>02</span>
+              <strong>会計</strong>
+              <small>ACCOUNTING</small>
+            </button>
+            <button class="field-button" id="field-tab-information" type="button" role="tab" aria-selected="false" aria-controls="fieldDetail" data-field="information" tabindex="-1">
+              <span>03</span>
+              <strong>情報</strong>
+              <small>INFORMATION</small>
+            </button>
+          </div>
+
+          <article class="field-detail" id="fieldDetail" role="tabpanel" aria-labelledby="field-tab-management" aria-live="polite">
+            <div class="field-image">
+              <img id="fieldImage" src="assets/images/class-marketing.png" alt="教室でマーケティングの発表をする学生">
+              <span id="fieldLargeNumber">01</span>
+            </div>
+            <div class="field-copy">
+              <p id="fieldEnglish">MANAGEMENT</p>
+              <h3 id="fieldTitle">「売れる仕組み」を考え、<br>人とチームを動かす。</h3>
+              <p id="fieldDescription">商品企画、ブランド、マーケティング、プロジェクト運営。相手のニーズを読み、アイデアを実現する道筋を考えます。</p>
+              <div class="course-example">
+                <span>PICKUP CLASS</span>
+                <strong id="fieldCourse">マーケティング論</strong>
+                <small id="fieldCourseNote">「作ったものを売る」から「売れるものを考える」へ。</small>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="department-proof reveal">
+          <div class="proof-copy">
+            <p>LEARN BY DOING</p>
+            <h3>技術だけで終わらない。<br>使う人の魅力まで考える。</h3>
+            <p>Web、アプリ、データ、デジタルコンテンツ。つくる力と、届け方・事業としての意味を考える力を同時に身につけます。</p>
+          </div>
+          <div class="proof-list" aria-label="学びの流れ">
+            <div><span>01</span><strong>見つける</strong><small>身近な課題やニーズ</small></div>
+            <div><span>02</span><strong>考える</strong><small>企画・数字・仕組み</small></div>
+            <div><span>03</span><strong>つくる</strong><small>Web・アプリ・表現</small></div>
+            <div><span>04</span><strong>伝える</strong><small>発表・改善・実装</small></div>
+          </div>
+        </div>
+
+        <div class="career-cloud reveal">
+          <div>
+            <p>FUTURE PATH</p>
+            <h3>学びの組み合わせが、<br>進路の幅になる。</h3>
+          </div>
+          <ul>
+            <li>エンジニア</li>
+            <li>デザイナー</li>
+            <li>マネージャー</li>
+            <li>会計・経理</li>
+            <li>公務員</li>
+            <li>会計専門職</li>
+            <li>経営者</li>
+            <li>情報・商業の教員</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-number">03 / PROJECTS</p>
+          <div>
+            <h2 id="projectsTitle">教室の外へ。<br>社会とつながるプロジェクト。</h2>
+            <p>企業・自治体・地域と関わりながら、学んだことを現場で試します。</p>
+          </div>
+        </div>
+
+        <div class="project-carousel reveal" aria-roledescription="カルーセル" aria-label="経営情報学科の取り組み">
+          <div class="project-viewport">
+            <div class="project-track" id="projectTrack">
+              <article class="project-card" data-project-index="0">
+                <figure><img src="assets/images/hero-ai-web.jpg" alt="AI時代のWebディレクター体験の授業風景"></figure>
+                <div class="project-card-body">
+                  <p><span>OPEN CAMPUS</span> 2026</p>
+                  <h3>AI時代の<br>Webディレクター体験</h3>
+                  <p>同じAIでも、企画と指示で成果は変わる。「AIを使う」と「AIを活かす」の違いを体験。</p>
+                </div>
+              </article>
+
+              <article class="project-card" data-project-index="1">
+                <figure><img src="assets/images/project-robot.jpg" alt="子ども向けプログラミング講座を支援する学生"></figure>
+                <div class="project-card-body">
+                  <p><span>PROJECT 01</span> ROBOT</p>
+                  <h3>ロボット大会を支え、<br>教材を開発する。</h3>
+                  <p>運営の体験から課題を見つけ、子どものプログラミング学習を支える教材へ。</p>
+                </div>
+              </article>
+
+              <article class="project-card" data-project-index="2">
+                <figure><img src="assets/images/project-system.jpg" alt="受付Webシステムを検討する学生チーム"></figure>
+                <div class="project-card-body">
+                  <p><span>PROJECT 02</span> WEB SYSTEM</p>
+                  <h3>地域の困りごとを、<br>Webシステムで解決。</h3>
+                  <p>大会受付を安全でスムーズにする仕組みを、利用者の視点から設計・開発。</p>
+                </div>
+              </article>
+
+              <article class="project-card" data-project-index="3">
+                <figure><img src="assets/images/seminar-workshop.png" alt="付箋を使って議論するゼミの学生"></figure>
+                <div class="project-card-body">
+                  <p><span>SEMINAR</span> TEAM WORK</p>
+                  <h3>対話と試行錯誤で、<br>新しい価値を提案。</h3>
+                  <p>身近な不便、社会課題、ビジネスの可能性をテーマに、チームで考え抜きます。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <div class="carousel-count" aria-live="polite"><strong id="projectCurrent">01</strong><span>/ 04</span></div>
+            <div class="carousel-buttons">
+              <button id="projectPrev" type="button" aria-label="前のプロジェクト">←</button>
+              <button id="projectNext" type="button" aria-label="次のプロジェクト">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fit-check section" id="fit-check" aria-labelledby="fitTitle">
+      <div class="container fit-grid">
+        <div class="fit-intro reveal">
+          <p class="section-number">04 / FIT CHECK</p>
+          <h2 id="fitTitle">あなたの「好き」は、<br>どの学びにつながる？</h2>
+          <p>3つの質問に答えると、経営情報学科で伸ばせそうな力が分かります。</p>
+          <div class="fit-visual" aria-hidden="true">
+            <span>?</span>
+            <i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <div class="quiz-card reveal" id="quizCard">
+          <div class="quiz-progress" aria-label="診断の進行状況">
+            <span id="quizStepLabel">QUESTION 1 / 3</span>
+            <div><i id="quizProgressBar"></i></div>
+          </div>
+
+          <div class="quiz-stage" id="quizStage">
+            <p class="quiz-kicker">どちらの瞬間にワクワクする？</p>
+            <h3 id="quizQuestion">新しいサービスのアイデアを考えるとき</h3>
+            <div class="quiz-options" id="quizOptions">
+              <button type="button" data-answer="management">
+                <span>A</span>
+                <strong>人が使いたくなる理由を考える</strong>
+                <small>相手の気持ちや市場を想像する</small>
+              </button>
+              <button type="button" data-answer="information">
+                <span>B</span>
+                <strong>まず動くものをつくってみる</strong>
+                <small>画面や仕組みを試作する</small>
+              </button>
+            </div>
+          </div>
+
+          <div class="quiz-result" id="quizResult" hidden aria-live="polite">
+            <p class="result-kicker">YOUR TYPE</p>
+            <div class="result-icon" id="resultIcon" aria-hidden="true">M</div>
+            <h3 id="resultTitle">企画プロデューサータイプ</h3>
+            <p id="resultDescription">人の気持ちや社会の変化から、サービスの魅力を考えるのが得意。経営・マーケティングの学びで力が伸びそうです。</p>
+            <div class="result-recommend">
+              <span>おすすめの学び</span>
+              <strong id="resultCourse">マーケティング論 / プロジェクト演習</strong>
+            </div>
+            <button class="restart-quiz" id="restartQuiz" type="button">もう一度診断する</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="ctaTitle">
+      <div class="cta-photo" aria-hidden="true">
+        <img src="assets/images/campus-lounge.jpg" alt="">
+      </div>
+      <div class="cta-overlay" aria-hidden="true"></div>
+      <div class="container cta-content reveal">
+        <p>FROM SCREEN TO CAMPUS</p>
+        <h2 id="ctaTitle">次は、本物のキャンパスで。<br>今日をキッカケにしよう。</h2>
+        <p>模擬授業、キャンパスツアー、学食体験、個別相談。画面では分からない空気を、オープンキャンパスで確かめてください。</p>
+        <div class="cta-actions">
+          <a class="button button-white" href="https://www.gku.ac.jp/event/open_campus/index.html" target="_blank" rel="noopener noreferrer">
+            最新の日程・予約を見る
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="text-link" href="https://www.gku.ac.jp/academics/management/information/new/index.html" target="_blank" rel="noopener noreferrer">
+            経営情報学科 公式ページ <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      <img class="cta-staff" src="assets/images/open-campus-staff.png" alt="両手を広げて来場者を迎えるオープンキャンパススタッフ">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/gku-logo.png" alt="岐阜協立大学">
+        <p>高校生向けキャンパス体験<br>インタラクティブWebプロトタイプ</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.gku.ac.jp/" target="_blank" rel="noopener noreferrer">岐阜協立大学 公式サイト <span aria-hidden="true">↗</span></a>
+        <a href="https://www.gku.ac.jp/about/campusmap/index.html" target="_blank" rel="noopener noreferrer">キャンパスマップ <span aria-hidden="true">↗</span></a>
+        <a href="https://www.gku.ac.jp/admission/index.html" target="_blank" rel="noopener noreferrer">入試情報 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-note">
+        <p>本サイトは学校紹介用の制作プロトタイプです。掲載情報・日程は変更される場合があるため、最新情報は岐阜協立大学公式サイトでご確認ください。</p>
+        <p>掲載写真・大学ロゴは岐阜協立大学公式サイトから引用しています。公開・再配布時は使用許諾をご確認ください。</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>GKU CAMPUS EXPERIENCE</span>
+      <a href="#top">PAGE TOP ↑</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-message">このサイトの体験機能を利用するにはJavaScriptを有効にしてください。</div>
+  </noscript>
+</body>
+</html>
